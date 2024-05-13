@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">TTravel</string>
+
+    <!--Pagina principal-->
+    <string name="botonUbicacionActual">UBICACION ACTUAL</string>
+    <string name="botonConsultarUbicacion">CONSULTAR UBICACION</string>
+    <string name="botonConfiguracion">CONFIGURACION</string>
+    <string name="botonSalirAplicacion">SALIR DE APLICACION</string>
+
+    <!--Preferencias-->
+    <string name="preferencias">Preferencias</string>
+    <string name="preferenciaTituloGeneral">General</string>
+    <string name="preferenciaFondo">Fondo animado.</string>
+    <string name="sumarioPreferenciaFondoOff">Fondo animado desactivado.</string>
+    <string name="sumarioPreferenciaFondoOn">Fondo animado activado.</string>
+
+</resources>
