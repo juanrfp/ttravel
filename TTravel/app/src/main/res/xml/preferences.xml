@@ -2,7 +2,8 @@
 <PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <PreferenceCategory android:title="@string/preferenciaTituloGeneral">
+    <PreferenceCategory android:title="@string/configutacionTituloGeneral"
+        android:layout="@layout/custom_preference_layout" >
 
     </PreferenceCategory>
     <SwitchPreference
@@ -11,6 +12,6 @@
         android:title="Switch preference"
         android:summaryOff="@string/sumarioPreferenciaFondoOff"
         android:summaryOn="@string/sumarioPreferenciaFondoOn"
-        />
+        android:layout="@layout/custom_switch_preference_layout"/>
 
 </PreferenceScreen>

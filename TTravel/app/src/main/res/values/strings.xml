@@ -9,7 +9,7 @@
 
     <!--Preferencias-->
     <string name="preferencias">Preferencias</string>
-    <string name="preferenciaTituloGeneral">General</string>
+    <string name="configutacionTituloGeneral">Configuración</string>
     <string name="preferenciaFondo">Fondo animado.</string>
     <string name="sumarioPreferenciaFondoOff">Fondo animado desactivado.</string>
     <string name="sumarioPreferenciaFondoOn">Fondo animado activado.</string>
