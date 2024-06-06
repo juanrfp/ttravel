@@ -27,7 +27,6 @@ public class ActividadPeticionPermisos extends AppCompatActivity {
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
                 == PackageManager.PERMISSION_GRANTED) {
             // Los permisos de ubicación ya han sido concedidos
-            // Puedes iniciar la siguiente actividad aquí
             iniciarSiguienteActividad();
         } else {
             // Solicitar permisos de ubicación
@@ -42,9 +41,9 @@ public class ActividadPeticionPermisos extends AppCompatActivity {
             if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
                     != PackageManager.PERMISSION_GRANTED) {
 
-                // Debes explicar al usuario por qué necesita los permisos de ubicación
+
                 if (ActivityCompat.shouldShowRequestPermissionRationale(this, Manifest.permission.ACCESS_FINE_LOCATION)) {
-                    // Mostrar un mensaje o diálogo explicativo aquí
+
                     Toast.makeText(this, "La aplicación necesita permisos de ubicación para algunas funcionalidades.", Toast.LENGTH_LONG).show();
                 }
 
@@ -63,10 +62,8 @@ public class ActividadPeticionPermisos extends AppCompatActivity {
         if (requestCode == LOCATION_PERMISSION_REQUEST_CODE) {
             if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                 // Los permisos de ubicación han sido concedidos por el usuario
-                // Puedes iniciar la siguiente actividad aquí
             } else {
                 // El usuario ha negado los permisos de ubicación
-                // Puedes manejar este caso aquí, por ejemplo, mostrar un mensaje al usuario
                 Toast.makeText(this, "Algunas funcionalidades estarán reducidas sin permisos de ubicación.", Toast.LENGTH_SHORT).show();
             }
             iniciarSiguienteActividad();

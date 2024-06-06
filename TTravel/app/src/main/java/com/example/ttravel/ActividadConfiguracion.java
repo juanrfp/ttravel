@@ -4,7 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
 
 public class ActividadConfiguracion extends AppCompatActivity {
 
@@ -12,6 +16,8 @@ public class ActividadConfiguracion extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_actividad_configuracion);
+
+        ImageButton buttonBack = findViewById(R.id.imageButtonPreferenciasBack);
 
         // Instanciar el fragmento
         ActividadPreferencias fragmentoPreferencias = new ActividadPreferencias();
@@ -27,6 +33,13 @@ public class ActividadConfiguracion extends AppCompatActivity {
 
         // Confirmar la transacción
         transaction.commit();
+
+        buttonBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
 
     }
 }

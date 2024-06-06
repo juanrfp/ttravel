@@ -9,9 +9,22 @@
 
     <!--Preferencias-->
     <string name="preferencias">Preferencias</string>
-    <string name="configutacionTituloGeneral">Configuración</string>
+    <string name="configutacionTituloGeneral">General</string>
     <string name="preferenciaFondo">Fondo animado.</string>
-    <string name="sumarioPreferenciaFondoOff">Fondo animado desactivado.</string>
-    <string name="sumarioPreferenciaFondoOn">Fondo animado activado.</string>
+    <string name="sumarioPreferenciaFondoOff">Animated background off.</string>
+    <string name="sumarioPreferenciaFondoOn">Animated background on.</string>
+    <string name="title_activity_pantalla_lugar_consultado">PantallaLugarConsultado</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="accesibilidad">Accesibility</string>
+    <string name="sumarioAccesibilidadVozOff">Text Speech Option Off.</string>
+    <string name="sumarioAccesibilidadVozOn">text Speech Option On.</string>
+    <string name="notificaciones">Notifications</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
+    <!--Objetos Menu-->
+    <string name="Weather">Weather</string>
+    <string name="Places">Places</string>
 </resources>

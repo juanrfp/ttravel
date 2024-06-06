@@ -17,6 +17,18 @@
         <item name="android:textSize">16sp</item> <!-- Tamaño del texto del resumen -->
     </style>
 
+    <style name="PreferenceScreen" parent="Theme.AppCompat">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textColorPrimary">#ffffff</item>
+        <item name="colorPrimary">#ff0000</item>
+        <item name="colorPrimaryDark">#ff0000</item>
+        <item name="colorAccent">#ff0000</item>
+        <item name="android:background">#CCCCCC</item>
+    </style>
+
+    <style name="BottomNavigation" parent="Widget.Design.BottomNavigationView">
+        <item name="android:minHeight">30dp</item>
+    </style>
 
 
     <style name="TemaPreferencia" parent="PreferenceThemeOverlay">

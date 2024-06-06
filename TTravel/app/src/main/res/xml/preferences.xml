@@ -3,15 +3,66 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <PreferenceCategory android:title="@string/configutacionTituloGeneral"
-        android:layout="@layout/custom_preference_layout" >
+        android:layout="@layout/custom_preference_layout">
 
     </PreferenceCategory>
     <SwitchPreference
         android:defaultValue="false"
-        android:key="switch_preference_1"
-        android:title="Switch preference"
+        android:key="switch_preference_fondo"
         android:summaryOff="@string/sumarioPreferenciaFondoOff"
         android:summaryOn="@string/sumarioPreferenciaFondoOn"
-        android:layout="@layout/custom_switch_preference_layout"/>
+        android:title="Animated background"
+        app:icon="@drawable/baseline_image_24" />
+    <CheckBoxPreference
+        android:key="checkbox_preference"
+        android:title="Enable Feature"
+        android:summary="Enable or disable this feature"
+        android:defaultValue="false"/>
+
+    <PreferenceCategory android:title="@string/accesibilidad"
+        android:layout="@layout/custom_preference_layout" >
+
+    </PreferenceCategory>
+    <SwitchPreferenceCompat
+        android:defaultValue="false"
+        android:key="switch_preference_lector"
+        android:persistent="true"
+        android:summaryOff="@string/sumarioAccesibilidadVozOff"
+        android:summaryOn="@string/sumarioAccesibilidadVozOn"
+
+        android:title="Text Reader"
+        app:icon="@drawable/baseline_record_voice_over_24" />
+    <CheckBoxPreference
+        android:key="checkbox_preference-2"
+        android:title="Enable Feature"
+        android:summary="Enable or disable this feature"
+        android:defaultValue="false"/>
+
+    <PreferenceCategory android:title="@string/notificaciones"
+        android:layout="@layout/custom_preference_layout" >
+
+    </PreferenceCategory>
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="switch_preference_notificaciones"
+        android:summaryOff="Don't recieve notifications."
+        android:summaryOn="Recieve notifications."
+        android:title="Recieve notifications"
+        app:icon="@drawable/baseline_surround_sound_24" />
+    <SwitchPreference
+        android:defaultValue="false"
+        android:dependency="switch_preference_notificaciones"
+        android:key="switch_preference_notificaciones_2"
+        android:summaryOff="Don't recieve notifications on silence mode. "
+        android:summaryOn="Recieve notifications."
+        android:title="Recieve notifications"
+        app:icon="@drawable/baseline_do_disturb_off_24" />
+    <SeekBarPreference
+        android:key="seekbar_preferences"
+        android:title="Notification volume"
+        android:summary="20%"
+        />
+
 
 </PreferenceScreen>
